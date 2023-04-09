@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>House Of Hammers Missoula</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<script>
+    let currentNav = "young-adults";
+
+    function buttonClick(element){
+        const elementId = element.id.replace("-button", "");
+
+        if (elementId != currentNav){
+            $("#" + elementId).fadeToggle();
+            $("#" + currentNav).fadeToggle();
+            currentNav = elementId;
+        }
+
+}
+</script>
+
+    <body>
+        <h1 class="text-center text-info">House Of Hammers Missoula</h1>
+        <div class="jumbotron jumbotron-fluid text-center">
+            <div class="row">
+                <div class="col-sm-2">
+                    <button id="about-us-button" onclick="buttonClick(this)" class="btn btn-default">Who are we?</button>
+                </div>
+                <div class="col-sm-2">
+                    <button id="solstice-swing-dance-button" onclick="buttonClick(this)" class="btn btn-default">Solstice Swing Dance.</button>
+                </div>
+                <div class="col-sm-3">
+                    <img style="border-radius:100%; width: 200px; height: 200px;" src="./images/hammer.jpg"></img>
+                </div>
+                <div class="col-sm-2">
+                    <button id="young-adults-button" onclick="buttonClick(this)" class="btn btn-default">Young Adults.</button>
+                </div>
+                <div class="col-sm-2">
+                    <button id="get-in-touch-button" onclick="buttonClick(this)" class="btn btn-default">Get In Touch.</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="width:100%; height:200px;" class="jumbotron jumbotron-fluid banner">
+            <u><h2 id="link-text" class="text-center text-success">Missoula Young Adults.</h2></u>
+        </div>
+
+        <div id="about-us" class="row" hidden>
+            <h2 class="text-center">Put about us information here.</h2>
+        </div>
+
+        <div id="solstice-swing-dance" class="row"hidden>
+            <h2 class="text-center">Put information about the solstice swing dance here.</h2>
+        </div>
+
+        <div id="young-adults" class="row">
+            <h2 class="text-center">Put linked-tree of young adults groups here.</h2>
+        </div>
+
+        <div id="get-in-touch" class="row"hidden>
+            <h2 class="text-center">Put contact information here.</h2>
+        </div>
+
+        <div class="footer">
+            <div class="inner">
+              <span>Footer</span>
+            </div>
+          </div>
+
+          <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase">Footer Content</h5>
+          <p>Here you can use rows and columns to organize your footer content.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h5 class="text-uppercase">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h5 class="text-uppercase">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2023 Copyright:
+      <a href="/"> HouseOfHammersMissoula.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+    </body>
+</html>
